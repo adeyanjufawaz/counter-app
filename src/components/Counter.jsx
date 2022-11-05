@@ -43,7 +43,7 @@ function Counter() {
       <Helmet>
         <title>Counter App</title>
         <meta name="description" content="Homepage" />
-        {/* <link rel="c" href="" /> */}
+        <link rel="canonical" href="/" />
       </Helmet>
       <div className="App">
         <div className="counter">
