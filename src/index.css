@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-image: linear-gradient(
+    to top left,
+    rgba(246, 76, 113, 0.6),
+  rgba(46, 37, 130, 0.65),
+  rgba(46, 37, 130, 0.78),
+  rgba(246, 76, 113, 0.6));
+  height: 100vh;
+  color: #222;
+  font-family: 'Lato', sans-serif;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+  appearance: none;
+  margin: 0;
+}
+.counter{
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+  align-items: center;
+  width: 500px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+h1{
+  font-size: 4rem;
+  color: #fff;
+}
+
+.btn,.input--btn,.err--link{
+  transition: all .3s ease-in;
+  border-radius: 17px;
+  width: 17rem;
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: 7px double #99738E;
+}
+.err--link{
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(46, 37, 130, 0.78);
+  border: 5px double #fff;
+}
+.err--link:hover{
+  background-color: #c54ea3;
+}
+.input--btn{
+  width: 27rem;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: #f64c72;
+  border: 7px double #fff;
+  color: #fff;
+}
+.danger{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@media (max-width:600px) {
+  .counter{
+    width: 300px;
+    margin: 15% auto;
+  }
+  
+}
