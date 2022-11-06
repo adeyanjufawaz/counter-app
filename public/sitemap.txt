@@ -1,0 +1,2 @@
+https://counter-app999.netlify.app/
+https://counter-app999.netlify.app/*
